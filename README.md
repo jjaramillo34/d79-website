@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# District 79 Alternative Education Website
+
+A modern, responsive website for District 79 Alternative Education built with Next.js, TypeScript, Tailwind CSS, and Lucide React icons.
+
+## Features
+
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Clean, professional design with smooth animations
+- **TypeScript**: Full type safety throughout the application
+- **Accessibility**: WCAG compliant with proper semantic HTML
+- **Performance**: Optimized for fast loading and smooth user experience
+
+## Pages
+
+- **Home**: Hero section with key information and features
+- **About**: Mission, vision, values, history, and leadership team
+- **Programs & Schools**: Detailed information about educational programs and campus locations
+- **Locations**: Campus information, contact details, and transportation options
+- **Media**: News articles, videos, documents, and photo galleries
+- **Resources**: Student resources, support contacts, and success tips
+- **Contact**: Contact forms, department contacts, and emergency information
+
+## Technology Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans and Geist Mono
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd d79-website
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── programs/          # Programs & Schools page
+│   ├── locations/         # Locations page
+│   ├── media/             # Media page
+│   ├── resources/         # Resources page
+│   ├── contact/           # Contact page
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # Reusable components
+│   ├── Navigation.tsx     # Main navigation
+│   └── Footer.tsx         # Site footer
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Colors
+The website uses a blue color scheme. You can customize colors in the Tailwind configuration or by updating the CSS classes throughout the components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Content
+All content is currently hardcoded in the components. For a production application, consider:
+- Using a CMS (Contentful, Strapi, etc.)
+- Implementing a headless CMS
+- Using markdown files for content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Images
+Placeholder images are used throughout the site. Replace with actual images in the `public/` directory.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Other Platforms
+The application can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support or questions, please contact the development team or create an issue in the repository.
