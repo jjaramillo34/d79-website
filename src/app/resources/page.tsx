@@ -1,4 +1,4 @@
-import { BookOpen, ExternalLink, Users, Calendar, Phone, Mail, Globe, Heart, Shield, MapPin, ArrowRight, Star, CheckCircle, Award, GraduationCap, FileText, Download, Clock, AlertTriangle, Home, Briefcase, Utensils, Shirt, Scale, Zap, Eye } from 'lucide-react';
+import { BookOpen, Users, Calendar, Phone, Mail, Globe, Heart, Shield, MapPin, ArrowRight, Star, Award, GraduationCap, FileText, AlertTriangle, Home, Briefcase, Utensils, Scale, Zap } from 'lucide-react';
 
 export default function Resources() {
 
@@ -187,7 +187,7 @@ export default function Resources() {
                     teal: { bg: 'from-teal-100 to-teal-200', icon: 'text-teal-600', badge: 'bg-teal-100 text-teal-800' },
                     rainbow: { bg: 'from-gradient-to-r from-red-100 via-yellow-100 to-purple-100', icon: 'text-purple-600', badge: 'bg-purple-100 text-purple-800' }
                   };
-                  const colorScheme = colors[service.color] || colors.blue;
+                  const colorScheme = colors[service.color as keyof typeof colors] || colors.blue;
                   const IconComponent = service.icon;
                   
                   return (
@@ -309,7 +309,7 @@ export default function Resources() {
                 red: { bg: 'from-red-100 to-red-200', icon: 'text-red-600', accent: 'bg-red-600' },
                 purple: { bg: 'from-purple-100 to-purple-200', icon: 'text-purple-600', accent: 'bg-purple-600' }
               };
-              const colorScheme = colors[category.color];
+              const colorScheme = colors[category.color as keyof typeof colors];
               
               return (
                 <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 p-10">
@@ -353,7 +353,7 @@ export default function Resources() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Emergency Resources</h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              If you're in crisis or need immediate help, these resources are available 24/7.
+              If you&apos;re in crisis or need immediate help, these resources are available 24/7.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronRight, ChevronLeft, Check, User, Calendar, MapPin, GraduationCap, Heart, Briefcase, ArrowRight } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Check, User, Calendar, GraduationCap, Heart, Briefcase, ArrowRight } from 'lucide-react';
 
 interface FormData {
   age: string;
@@ -19,7 +19,7 @@ interface Program {
   description: string;
   eligibility: string;
   link: string;
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   category: string;
 }
 
@@ -38,7 +38,7 @@ const SmartApplicationForm = () => {
   const [recommendedPrograms, setRecommendedPrograms] = useState<Program[]>([]);
   const [showResults, setShowResults] = useState(false);
 
-  const updateFormData = (field: keyof FormData, value: any) => {
+  const updateFormData = (field: keyof FormData, value: string | string[]) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -162,7 +162,7 @@ const SmartApplicationForm = () => {
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">🎉 Perfect Match!</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Based on your responses, we've found the programs that best match your needs. 
+            Based on your responses, we&apos;ve found the programs that best match your needs. 
             Each recommendation is tailored to your specific situation and goals.
           </p>
         </div>

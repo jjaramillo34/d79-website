@@ -144,7 +144,7 @@ export default function Locations() {
                 <MapPin className="h-12 w-12 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-700 mb-4">Interactive Map Coming Soon</h3>
-              <p className="text-gray-600 text-lg mb-2">We're working on integrating an interactive map</p>
+              <p className="text-gray-600 text-lg mb-2">We&apos;re working on integrating an interactive map</p>
               <p className="text-gray-500">to help you find our locations and get directions.</p>
             </div>
           </div>

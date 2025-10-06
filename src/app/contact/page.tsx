@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, Calendar, CheckCircle, ArrowRight, Star, Heart, Award, Users, BookOpen, Shield, Zap } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, CheckCircle, Star, Heart, Award, Users, BookOpen, Shield, Zap } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -99,7 +99,7 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Get in touch with us. We're here to help you with any questions about our programs and services.
+              Get in touch with us. We&apos;re here to help you with any questions about our programs and services.
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Send us a Message</h2>
                 <p className="text-gray-600">
-                  Have questions about our programs? Want to schedule a visit? Fill out the form below and we'll get back to you as soon as possible.
+                  Have questions about our programs? Want to schedule a visit? Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ export default function Contact() {
                 <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
                   <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-green-900 mb-2">Message Sent!</h3>
-                  <p className="text-green-700">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                  <p className="text-green-700">Thank you for contacting us. We&apos;ll get back to you within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -275,7 +275,7 @@ export default function Contact() {
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
                 <p className="text-gray-600">
-                  We're here to help! Reach out to us through any of the methods below, or visit us at one of our locations.
+                  We&apos;re here to help! Reach out to us through any of the methods below, or visit us at one of our locations.
                 </p>
               </div>
 
@@ -404,7 +404,7 @@ export default function Contact() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Visit Us</h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Come see our facilities and meet our staff. We'd love to show you around!
+              Come see our facilities and meet our staff. We&apos;d love to show you around!
             </p>
           </div>
 
@@ -416,7 +416,7 @@ export default function Contact() {
                   <MapPin className="h-12 w-12 text-blue-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Interactive Map Coming Soon</h3>
-                <p className="text-gray-600 text-lg mb-2">We're working on integrating an interactive map</p>
+                <p className="text-gray-600 text-lg mb-2">We&apos;re working on integrating an interactive map</p>
                 <p className="text-gray-500">to help you find our locations throughout NYC</p>
               </div>
             </div>

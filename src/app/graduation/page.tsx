@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin, Users, Award, Camera, Heart, Star, Clock, Mail, Phone, BookOpen, ArrowRight, CheckCircle, Trophy, Sparkles, Gift, ArrowUpRight, ExternalLink, Image, Play, Eye } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, Users, Award, Camera, Heart, Star, Clock, Mail, Phone, BookOpen, ArrowRight, CheckCircle, Trophy, Sparkles, Image, Play, Eye } from 'lucide-react';
 
 export default function Graduation() {
   const graduationInfo = [
@@ -335,7 +335,7 @@ export default function Graduation() {
               <div>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                   Our graduation ceremonies are special celebrations of the hard work, dedication, and achievements of our students. 
-                  It's a time to recognize not just academic success, but the personal growth and resilience that brought each 
+                  It&apos;s a time to recognize not just academic success, but the personal growth and resilience that brought each 
                   graduate to this milestone moment.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
@@ -506,7 +506,7 @@ export default function Graduation() {
                 purple: { bg: 'from-purple-100 to-purple-200', icon: 'text-purple-600', accent: 'bg-purple-600' },
                 indigo: { bg: 'from-indigo-100 to-indigo-200', icon: 'text-indigo-600', accent: 'bg-indigo-600' }
               };
-              const colorScheme = colors[highlight.color];
+              const colorScheme = colors[highlight.color as keyof typeof colors];
               
               return (
                 <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 p-8 text-center">
@@ -714,7 +714,7 @@ export default function Graduation() {
             Congratulations, Graduates!
           </h2>
           <p className="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Your hard work and dedication have brought you to this moment. We're proud of your achievements and excited for your future.
+            Your hard work and dedication have brought you to this moment. We&apos;re proud of your achievements and excited for your future.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a

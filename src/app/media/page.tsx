@@ -1,4 +1,4 @@
-import { Play, Download, Calendar, User, Eye, Share2, FileText, Image, Video, ArrowRight, Star, CheckCircle, Camera, Newspaper, BookOpen, Award, Heart, Users, GraduationCap, Phone, Mail } from 'lucide-react';
+import { Play, Download, Calendar, User, Share2, FileText, Image, Video, ArrowRight, Star, Camera, Newspaper, BookOpen, Award, Heart, Users, Mail } from 'lucide-react';
 
 export default function Media() {
   const newsArticles = [

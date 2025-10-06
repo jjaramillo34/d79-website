@@ -1,4 +1,4 @@
-import { Target, Users, Award, Heart, BookOpen, Lightbulb, GraduationCap, Calendar, MapPin, Star } from 'lucide-react';
+import { Target, Users, Award, Heart, BookOpen, Lightbulb, GraduationCap, Calendar, Star } from 'lucide-react';
 
 export default function About() {
   return (

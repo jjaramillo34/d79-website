@@ -1,4 +1,4 @@
-import { ExternalLink, GraduationCap, Users, Clock, Heart, BookOpen, Briefcase, MapPin, ArrowRight, Star, Award, CheckCircle, Sparkles, Target, Zap } from 'lucide-react';
+import { GraduationCap, Users, Clock, Heart, BookOpen, Briefcase, MapPin, ArrowRight, Star } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import SectionWrapper from '@/components/SectionWrapper';
 import SectionHeader from '@/components/SectionHeader';

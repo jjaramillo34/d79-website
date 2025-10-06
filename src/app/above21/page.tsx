@@ -1,4 +1,4 @@
-import { ExternalLink, GraduationCap, Users, BookOpen, Globe, MapPin, Clock, Award, ArrowRight, Star, Heart, CheckCircle, Sparkles, Target, Zap } from 'lucide-react';
+import { GraduationCap, Users, BookOpen, Globe, MapPin, Clock, Award, ArrowRight, Star, CheckCircle } from 'lucide-react';
 
 export default function Above21() {
   const programFeatures = [

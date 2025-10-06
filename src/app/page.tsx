@@ -29,7 +29,7 @@ export default function Home() {
                 <span className="block text-blue-200">Alternative Schools & Programs</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-                District 79 is NYC's Alternative Schools District. We are proud to serve over 50,000 students a year from 6 weeks old to 96 years old in the 5 boroughs and beyond!
+                District 79 is NYC&apos;s Alternative Schools District. We are proud to serve over 50,000 students a year from 6 weeks old to 96 years old in the 5 boroughs and beyond!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link

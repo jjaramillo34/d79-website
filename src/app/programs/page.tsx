@@ -1,4 +1,4 @@
-import { BookOpen, Users, Clock, Award, GraduationCap, Briefcase, Laptop, Heart, ArrowRight, MapPin, Star, CheckCircle } from 'lucide-react';
+import { BookOpen, Users, GraduationCap, Briefcase, Laptop, Heart, ArrowRight, MapPin, Star, CheckCircle } from 'lucide-react';
 
 export default function Programs() {
   const programs = [
